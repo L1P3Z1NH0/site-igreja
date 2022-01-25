@@ -1,0 +1,427 @@
+@import url('http://fonts.cdnfonts.com/css/bookman-old-style');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/fundo-tela-inicial/Frame-1-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mainNav{
+    transition: background 0.4s;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    z-index: 1;
+    padding: 5%;
+    transition: 0.3s;
+}
+
+button{
+    all: unset;
+}
+
+.icon-navbar{
+    width: 5vw;
+    height: auto;
+    transition: 0.3s;
+}
+
+.logo-nav{
+    height: 15vh;
+    width: 100%;
+}
+
+.icon-agostiniano{
+    transition: 0.3s;
+}
+
+.bg-transition {
+    background: linear-gradient(0deg, #742134 0%, rgba(116, 33, 52, 0) 239.35%);
+    padding:0 5%;
+    height: 10vh;
+}
+
+.offcanvas{
+    width: 25vw;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+element.style{
+    transform: translate(0px, 100px);
+}
+
+a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+
+.list-menu{
+    width: 20vw;
+}
+
+.list-outline{
+    width: 15vw;
+    padding-top: 5%;
+    border-top: 1px solid #C4C4C4BF;
+    border-top-left-radius: 5px;
+    opacity: 0.75;
+}
+
+.list-outline-dropdown{
+    display: flex;
+    width: 15vw;
+    padding-top: 5%;
+    /* border-top: 1px solid #C4C4C4BF;
+    border-top-left-radius: 5px; */
+    margin-left: 2%;
+}
+
+.dropdown-toggle{
+    display: flex;
+    align-items: center;
+    width: 15vw;
+    justify-content: space-between;
+}
+
+.dropdown-menu{
+    border: none;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+}
+
+.link-menu{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #666666;
+    font-size: 16px;
+}
+
+.link-pastorais{
+    display: flex;
+}
+
+#dropdownMenuButton{
+    display: flex;
+    align-items: center;
+}
+
+.intro-txt{
+    width: 50vw;
+    height: 13vh;
+    margin: 5%;
+    position: absolute;
+    bottom: 50%;
+}
+
+#main-txt-content{
+    font-family: 'Bookman Old Style', sans-serif;
+    font-weight: 600;
+}
+
+#sub-txt{
+    width: 30vw;
+    height: 9vh;
+    margin: 3% 0;
+}
+
+#sub-txt-content{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.65rem;
+}
+
+.general-container-content{
+    width: 100%;
+    height: 100;
+    padding: 10% 0;
+}
+
+.sub-title{
+    text-align: center;
+    font-family: 'Bookman Old Style', sans-serif;
+    font-weight: 600;
+    color: #742134;
+    font-size: 45px;
+    margin: 0;
+}
+
+.reze-box{
+    margin: 5% 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reze-item{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-reze{
+    width: 8vw;
+    height: 15vh;
+}
+
+.reze-txt{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #404040;
+    font-size: 20px;
+    text-align: center;
+}
+
+.acesse{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #742134;
+    text-align: center;
+}
+
+.paroquia-sub-title{
+    margin-bottom: 0;
+}
+
+#paroquia-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+#paroquia-img{
+    width: 60vw;
+    height: 55vh;
+}
+
+#paroquia-txt-box{
+    padding: 5%;
+}
+
+.info-txt{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    text-align: justify;
+    font-size: 15px;
+}
+
+#address-content{
+    display: flex;
+    align-items: center;
+}
+
+#address{
+    margin: 5%;
+    height: 50vh;
+    width: 50vw;
+}
+
+#address-txt-box{
+    padding: 5%;
+}
+
+.footer{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, #742134 0%, rgba(116, 33, 52, 0) 239.35%);
+    background-blend-mode: darken;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(4px);
+}
+
+.footer-child{
+    width: 50%;
+    height: 60vh;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-info{
+    margin-right: 20%;
+}
+
+.footer-item{
+    display: flex;
+    align-items: center;
+    margin: 4% 0;
+    width: 100%;
+    height: 10vh;
+}
+
+.footer-icon{
+    width: 4vw;
+    height: 7vh;
+}
+
+.footer-txt{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin:0 0 0 10%;
+}
+
+.footer-nm{
+    display: flex;
+
+}
+
+.vertical-line {
+    border-left: 4px solid #FFFFFF;
+    height: 35vh;
+    position: absolute;
+    left: 50%;
+    margin-top: 3%;
+    margin-left: -3px;
+    border-radius: 5px;
+    top: 0;
+}
+
+.logo-nm{
+    width: 10vw;
+    height: 15vh;
+    left: 45.5%;
+    bottom: 5%;
+    position: absolute;
+}
+
+.footer-paroquia{
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-logo-paroquia{
+    width: 25vh;
+    height: 35vh;
+}
+
+.footer-paroquia-txt{
+    margin:5% 0 0 0;
+}
+
+#social-media-box{
+    margin-top: 5%;
+}
+
+.social-media{
+    margin-right: 2rem;
+    font-size:4rem;
+    color:rgb(218, 214, 214);
+    transition: 0.3s;
+}
+
+.facebook:hover{
+    color:#7b94c9;
+}
+
+.instagram:hover{
+    color:#c098af;
+}
+
+.whatsapp:hover{
+    color: #25d366;
+}
+
+.youtube:hover{
+    color: #ec3e3e;
+}
+
+
+/* ------ PAROQUIA ------- */
+
+.header-paroquia{
+    background-image: url(/images/fotos-para-tela-a-paroquia/fundo-paroquia.png);
+}
+
+.intro-paroquia{
+    width: 30vw;
+    height: 15vh;
+    margin: 0%;
+    position: absolute;
+    bottom: 54%;
+    left: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-txt-paroquia{
+    font-family: 'Bookman Old Style', sans-serif;
+    font-weight: 600;
+    font-size: 65px;
+}
+
+.sub-txt-paroquia{
+    width: 40vw;
+    height: 9vh;
+    margin: 3% 0;
+}
+
+.sub-txt-paroquia-content{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2.75rem;
+    letter-spacing: 2.5px;
+    width: 100%;
+}
+
+#paroquia-img{
+    width: 100%;
+    height: 65vh;
+}
+
+#paroquia-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#paroquia-txt-box{
+    padding-right: 0;
+}
+
+.info-txt-paroquia{
+    width: 90%;
+}
+
+.frei-item{
+    margin:0 7%;
+}
+
+.frei-txt{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5%;
+}
