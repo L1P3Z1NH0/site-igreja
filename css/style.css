@@ -425,3 +425,183 @@ a:hover{
     text-align: center;
     margin-top: 5%;
 }
+
+/* ----BATISMO---- */
+
+.header-batismo{
+    background-image: url(/images/batismo/fundo-batismo.png);
+}
+
+.batismo-img{
+    width: 100%;
+    height: 20vh;
+}
+
+.general-container-batismo{
+    padding-top: 0;
+}
+
+.info-txt-box-batismo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-txt-batismo{
+    width: 90%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.info-txt-box{
+    margin-left: 10%;
+}
+
+.info-h{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.form-box{
+    margin:0 5% ;
+}
+
+.form-txt{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    width: 50vw;
+    margin-top: 5%;
+}
+
+.batismo-form{
+    display: flex;
+}
+
+.batismo-form-item{
+    display: flex;
+    flex-direction: column;
+    margin:5% 30% 0 0;
+}
+
+.form-batismo-link{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 25px;
+    background-color: #742134;
+    padding: 2%;
+    text-align: center;
+    width: 35vw;
+    margin: 5% 0;
+    border-radius: 13px;
+}
+
+.form-batismo-link:hover{
+    color: #FFFFFF;
+    background-color: #7b94c9;
+    transition: 0.2s;
+}
+
+.img-batismo-form{
+    height: 40vh;
+    width: 25vw;
+}
+
+.sub-txt-batismo{
+    width: 50vw;
+    height: 9vh;
+    margin: 3% 0;
+}
+
+/* -----CATEQUESE E CRISMA----- */
+
+.header-catequese-crisma{
+    background-image: url(/images/catequese-crisma/fundo-catequese-crisma.png);
+}
+
+.main-txt-catequese-crisma{
+    font-family: 'Bookman Old Style', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    width: 60vw;
+    margin-bottom: 0;
+}
+
+.sub-txt-catequese{
+    width: 40vw;
+    height: 9vh;
+    margin:0;
+}
+
+.sub-txt-catequese-content{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+#catequese-img{
+    height: 40vh;
+    width: 25vw;
+}
+
+.info-txt-box-catequese{
+    width: 50vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -----COROINHAS E CERIMONIARIOS----- */
+
+.header-coroinhas-cerimoniarios{
+    background-image: url(/images/coroinhas/fundo.png);
+}
+
+.sub-txt-coroinhas-content{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+#coroinha-img{
+    width: 100%;
+    height: 60vh;
+}
+
+/* ---- ENCONTRO DE JOVENS ---- */
+
+.header-encontro-de-jovens{
+    background-image: url(/images/jovens/fundo-jovens.png);
+}
+
+.main-txt-jovens{
+    font-family: 'Bookman Old Style', sans-serif;
+    font-weight: 600;
+    font-size: 65px;
+    width: 60vw;
+}
+
+#jovens-img{
+    width: 25vw;
+    height: 45vh;
+}
+
+.info-txt-box-jovens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+}
+
+/* ---- ENCONTRO DE CASAIS ---- */
+
+.header-encontro-de-casais{
+    background-image: url(/images/casais/fundo-casais.png);
+}
+
+#casais-img{
+    width: 30vw;
+    height: 45vh;
+}
