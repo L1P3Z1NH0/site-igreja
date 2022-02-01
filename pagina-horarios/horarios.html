@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horários de missas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="http://fonts.cdnfonts.com/css/bookman-old-style" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="general-container">
+        <div>
+            <nav class="bg-eventos">
+
+                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+                    aria-controls="offcanvasWithBackdrop">
+
+                    <img class="icon-navbar icon-navbar-eventos" src="/images/icones-nav-bar/icon-menu.png" alt=""
+                        width="70" height="70">
+
+                </button>
+
+                <a class="" href="/pagina-inicial/index.html">
+                    <img class="icon-navbar logo-nav logo-nav-eventos" src="/images/icones-nav-bar/logo-nav.png" alt=""
+                        width="70" height="70">
+                </a>
+
+                <a class="" href="https://www.osabrasil.org/" target="_blank">
+                    <img class="icon-navbar icon-agostiniano" src="/images/icones-nav-bar/icon-agostinianos-1.png"
+                        alt="" width="70" height="70">
+                </a>
+            </nav>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+                aria-labelledby="offcanvasWithBackdropLabel">
+                <div class="offcanvas-header">
+                    <p></p>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul>
+                        <a class="link-menu" href="/pagina-paroquia/paroquia.html">
+                            <li class="">
+                                A Paróquia
+                            </li>
+
+                            <li class="list-outline"></li>
+                        </a>
+                        <a class="link-menu link-pastorais " type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" href="#">
+                            <li class="list-menu dropdown-toggle">
+                                Pastorais
+                            </li>
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item link-menu" href="/pagina-batismo/batismo.html">Batismo</a></li>
+                            <li class="list-outline-dropdown"></li>
+                            <li><a class="dropdown-item link-menu"
+                                    href="/pagina-catequese-crisma/catequese-crisma.html">Catequese/Crisma</a></li>
+                            <li class="list-outline-dropdown"></li>
+                            <li><a class="dropdown-item link-menu"
+                                    href="/pagina-coroinhas-cerimoniario/coroinhas-cerimoniarios.html">Coroinhas/Cerimoniários</a>
+                            </li>
+                            <li class="list-outline-dropdown"></li>
+                            <li><a class="dropdown-item link-menu"
+                                    href="/pagina-encontro-de-jovens/encontro-de-jovens.html">Encontro de Jovens</a>
+                            </li>
+                            <li class="list-outline-dropdown"></li>
+                            <li><a class="dropdown-item link-menu" href="/pagina-curso-noivos/curso-noivos.html">Curso
+                                    de Noivos</a></li>
+                            <li class="list-outline-dropdown"></li>
+                            <li><a class="dropdown-item link-menu"
+                                    href="/pagina-encontro-de-casais/encontro-de-casais.html">Encontro de Casais</a>
+                            </li>
+                            <li class="list-outline-dropdown"></li>
+                        </ul>
+                        <li class="list-outline"></li>
+                        <a class="link-menu" href="/pagina-horarios/horarios.html">
+                            <li class="list-menu">
+                                Calendário da Paróquia
+                            </li>
+                            <li class="list-outline"></li>
+                        </a>
+                        <a class="link-menu" href="/pagina-eventos/eventos.html">
+                            <li class="list-menu">
+                                Eventos
+                            </li>
+                            <li class="list-outline"></li>
+                        </a>
+                        <a class="link-menu" href="/pagina-dizimo/dizimo.html">
+                            <li class="list-menu">
+                                Dízimo
+                            </li>
+                            <li class="list-outline"></li>
+                        </a>
+                        <a class="link-menu" href="/pagina-apostolado-oracao/apostolado-oracao.html">
+                            <li class="list-menu">
+                                Apostolado da Oração
+                            </li>
+                            <li class="list-outline"></li>
+                        </a>
+                        <a class="link-menu" href="/pagina-padroeira/padroeira.html">
+                            <li class="list-menu">
+                                A Nossa Padroeira
+                            </li>
+                            <li class="list-outline"></li>
+                        </a>
+                        <li class="list-menu"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="horario-santa-rita" class="toggler-horario"  style="display: none;">
+            <div class="horario-box">
+                <button onclick="hideDiv('horario-santa-rita')"
+                    class="close-horario" href="#">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <h4 class="horario-title">Horários Matriz</h4>
+
+                <div class="horario-txt-box">
+                    <p class="horario-txt">
+                        Missas <b> terça-feira a sexta-feira </b> às 19h30
+                        <br>
+                        Terça-feira Terço das famílias - 20h
+                        <br>
+                        Quarta - feira Grupo de Oração - 20h
+                        <br>
+                        Quinta-feira Adoração ao Santíssimo às 19h
+                    </p>
+                    <p class="horario-txt">Missa <b> sábado </b> às 18h
+                        <br>
+                        Missas <b> domingo </b> às 08h, 10h e 18h</p>
+                    <p class="horario-txt"> <b> Confissões </b> às sextas-feiras das 10h às 11h30 e das 15h às 17h30 ou agende
+                        pelo
+                        WhatsApp.</p>
+                </div>
+
+                <img class="horario-img" src="/images/horarios/Logo-Paroquia-Santa-Rita.png" alt="">
+
+                <p class="endereco">
+                    <b> Endereço: </b> Rua Fritz Jank - 40 - Parque Novo Mundo - São Paulo - SP - 02181- 120
+                </p>
+            </div>
+        </div>
+        
+        <div id="horario-sao-vicente" class="toggler-horario" style="display: none;">
+            <div class="horario-box">
+                <button onclick="hideDiv('horario-sao-vicente')"
+                    class="close-horario" href="#">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <h4 class="horario-title">Horários São Vicente</h4>
+
+                <div class="horario-txt-box horario-txt-box-2">
+                    <p class="horario-txt">
+                        Missa <b> domingo </b> São Vicente : 19h
+                    </p>
+                    <p class="horario-txt">
+                        Festa do Padroeiro: <b> 27 de Setembro </b>
+                    </p>
+                </div>
+
+                <img class="horario-img horario-img-2" src="/images/horarios/sao-vicente.png" alt="">
+
+                <p class="endereco">
+                    <b> Endereço: </b> Avenida São João - 132 - Parque Vila Maria - São Paulo - SP - 02169-100
+                </p>
+            </div>
+        </div>
+        
+        <div id="horario-sao-nicolau" class="toggler-horario" style="display: none;">
+            <div class="horario-box">
+                <button onclick="hideDiv('horario-sao-nicolau')"
+                    class="close-horario" href="#">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <h4 class="horario-title">Horários São Nicolau</h4>
+
+                <div class="horario-txt-box horario-txt-box-2">
+                    <p class="horario-txt">
+                        Missa <b> domingo </b>
+                    </p>
+                    <p class="horario-txt">
+                        Festa do Padroeiro: <b> 10 de Setembro </b>
+                    </p>
+                </div>
+
+                <img class="horario-img horario-img-2" src="/images/horarios/tolentino.png" alt="">
+
+                <p class="endereco">
+                    <b> Endereço: </b> Avenida Tenente Amaro Felicíssimo da Silveira - 665 - Parque Novo - São Paulo – SP - 02177-010
+                </p>
+            </div>
+        </div>
+
+        <div id="horario-sao-jose" class="toggler-horario" style="display: none;">
+            <div class="horario-box">
+                <button onclick="hideDiv('horario-sao-jose')"
+                    class="close-horario" href="#">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <h4 class="horario-title">Horários São José Operário</h4>
+
+                <div class="horario-txt-box horario-txt-box-2">
+                    <p class="horario-txt">
+                        Missa <b> domingo </b> São José Operário : 10h30
+                    </p>
+                    <p class="horario-txt">
+                        Festa do Padroeiro: <b> 01 de maio </b>
+                    </p>
+                </div>
+
+                <img class="horario-img horario-img-2" src="/images/horarios/sao-jose.png" alt="">
+
+                <p class="endereco">
+                    <b> Endereço: </b> Rua São Felipe - 39 - Parque Vila Maria - São Paulo - SP - 02169-190
+                </p>
+            </div>
+        </div>
+
+        <div id="horario-fatima" class="toggler-horario" style="display: none;">
+            <div class="horario-box">
+                <button onclick="hideDiv('horario-fatima')"
+                    class="close-horario" href="#">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <h4 class="horario-title">Horários Nossa Senhora de Fátima</h4>
+
+                <div class="horario-txt-box horario-txt-box-2">
+                    <p class="horario-txt">
+                        Missa <b> domingo </b> Nossa Senhora de Fátima : 17h30
+                    </p>
+                    <p class="horario-txt">
+                        Festa do Padroeiro: <b> 13 de maio </b>
+                    </p>
+                </div>
+
+                <img class="horario-img horario-img-2" src="/images/horarios/fatima.png" alt="">
+
+                <p class="endereco">
+                    <b> Endereço: </b> Rua Beibinha Barbosa de Moraes – 19 - Jardim Andaraí - São Paulo - SP - 02169-040
+                </p>
+            </div>
+        </div>
+
+        <div id="horario-aparecida" class="toggler-horario" style="display: none;">
+            <div class="horario-box">
+                <button onclick="hideDiv('horario-aparecida')"
+                    class="close-horario" href="#">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <h4 class="horario-title">Horários Nossa Senhora Aparecida</h4>
+
+                <div class="horario-txt-box horario-txt-box-2">
+                    <p class="horario-txt">
+                        Missa <b> domingo </b> Aparecida : 09h30
+                    </p>
+                    <p class="horario-txt">
+                        Festa do Padroeiro: <b> 12 de outubro </b>
+                    </p>
+                </div>
+
+                <img class="horario-img horario-img-2" src="/images/horarios/aparecida.png" alt="">
+
+                <p class="endereco">
+                    <b> Endereço: </b> Rua Principal - 287 - Parque Vila Maria - São Paulo - SP - 02169-270
+                </p>
+            </div>
+        </div>
+        
+        <div id="horario-conselho" class="toggler-horario" style="display: none;">
+            <div class="horario-box">
+                <button onclick="hideDiv('horario-conselho')"
+                    class="close-horario" href="#">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <h4 class="horario-title">Horários Mãe do Bom Conselho</h4>
+
+                <div class="horario-txt-box horario-txt-box-2">
+                    <p class="horario-txt">
+                        Missa <b> domingo </b> Bom Conselho : 08h
+                    </p>
+                    <p class="horario-txt">
+                        Festa do Padroeiro: <b> 26 de Abril </b>
+                    </p>
+                </div>
+
+                <img class="horario-img horario-img-2" src="/images/horarios/conselho.png" alt="">
+
+                <p class="endereco">
+                    <b> Endereço: </b> Rua Francisco Leopoldo e Silva - 36 - Jardim Andaraí - São Paulo - SP - 02166-030
+                </p>
+            </div>
+        </div>
+
+        <div class="general-container-content">
+            <h2 class="sub-title">
+                HORÁRIOS DE MISSAS
+            </h2>
+
+            <div id="horarios-content">
+                <h4 class="h4-matriz">Matriz e Comunidades</h4>
+
+                <button onclick="hideShowDiv('horario-santa-rita')" href="">
+                    <img class="santa-rita-img" src="/images/horarios/santa-rita.png" alt="">
+                </button>
+
+                <div class="container">
+                    <div class="row row-cols-3 box-img-horario">
+                        <div class="col">
+                            <button onclick="hideShowDiv('horario-sao-vicente')" href="">
+                                <img class="img-horario" src="/images/horarios/sao-vicente.png" alt="">
+                            </button>
+                        </div>
+
+                        <div class="col">
+                            <button onclick="hideShowDiv('horario-sao-nicolau')" href="">
+                                <img class="img-horario" src="/images/horarios/tolentino.png" alt="">
+                            </button>
+                        </div>
+
+                        <div class="col">
+                            <button onclick="hideShowDiv('horario-sao-jose')" href="">
+                                <img class="img-horario" src="/images/horarios/sao-jose.png" alt="">
+                            </button>
+                        </div>
+
+                        <div class="col">
+                            <button onclick="hideShowDiv('horario-fatima')" href="">
+                                <img class="img-horario" src="/images/horarios/fatima.png" alt="">
+                            </button>
+                        </div>
+
+                        <div class="col">
+                            <button onclick="hideShowDiv('horario-aparecida')" href="">
+                                <img class="img-horario" src="/images/horarios/aparecida.png" alt="">
+                            </button>
+                        </div>
+
+                        <div class="col">
+                            <button onclick="hideShowDiv('horario-conselho')" href="">
+                                <img class="img-horario" src="/images/horarios/conselho.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+
+            <div class="footer-info footer-child">
+                <div class="footer-item">
+                    <img class="footer-icon" src="/images/icones-rodape-brancos/icon-location.png" alt="">
+                    <p class="footer-txt">
+                        Rua Fritz Jank, 40 <br>
+                        Parque Novo Mundo, São Paulo - SP <br>
+                        CEP: 02181-120
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <img class="footer-icon" src="/images/icones-rodape-brancos/icon-phone.png" alt="">
+                    <p class="footer-txt">
+                        Telefone - Whatsapp: (11) 2954-0652
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <img class="footer-icon" src="/images/icones-rodape-brancos/icon-calendar.png" alt="">
+                    <p class="footer-txt">
+                        Horários de atendimento da Secretaria Paroquial <br>
+                        De terça - feira a sábado das 9h às 18h <br>
+                        ️Horário de Almoço: 13h às 14h.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-nm">
+                <div class="vertical-line">
+                </div>
+                <img class="logo-nm" src="/images/icones-rodape-brancos/logo-nm.png" alt="">
+            </div>
+
+            <div class="footer-paroquia footer-child">
+                <img class="footer-logo-paroquia" src="/images/icones-rodape-brancos/logo-paroquia-santa-rita.png"
+                    alt="">
+                <p class="footer-txt footer-paroquia-txt">
+                    Paróquia Santa Rita de Cássia - Parque novo mundo <br>
+                    Todos os direitos reservados <br>
+                    Contato: santarita.pnm@gmail.com
+                </p>
+
+                <div id="social-media-box">
+                    <a href="#" target="_blank" class="facebook social-media"><i class="fab fa-facebook"></i></a>
+
+                    <a href="#" class="instagram social-media" target="_blank"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#" class="whatsapp social-media" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+                    <a href="#" class="youtube social-media" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="/js/toggle-div.js"></script>
+</body>
+
+</html>

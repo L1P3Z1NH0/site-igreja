@@ -499,7 +499,7 @@ a:hover{
 
 .form-batismo-link:hover{
     color: #FFFFFF;
-    background-color: #7b94c9;
+    background-color: #945463;
     transition: 0.2s;
 }
 
@@ -604,4 +604,416 @@ a:hover{
 #casais-img{
     width: 30vw;
     height: 45vh;
+}
+
+/* ---- CURSO DE NOIVOS---- */
+
+.header-curso-noivos{
+    background-image: url(/images/casamento/fundo-casamento.png);
+}
+
+.general-container-content-casamento{
+    padding: 10% 5%;
+}
+
+#casamento-content{
+    display: flex;
+    margin-top: 5%;
+}
+
+#alianca-img{
+    width: 35vw;
+    height: 30vh;
+}
+
+.info-txt-box-casamento{
+    width: 60vw;
+    margin: 0;
+    /* margin-right: 5%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.ul-curso-noivos{
+    padding: 0;
+    
+}
+
+.li-curso-noivos {
+    padding-left: 1em; 
+    text-indent: -.7em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #000000;
+}
+  
+.li-curso-noivos::before {
+    content: "•";
+    padding-right:7px;
+    color: #742134;
+    font-size: 15px;
+}
+
+.general-container-content-datas{
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5% 20% 5%;
+}
+
+.ul-datas{
+    padding: 0;
+    margin-top: 2%;
+}
+
+.li-datas {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+#datas-content{
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 2%;
+}
+
+#calendario-img{
+    width: 18vw;
+    height: 30vh;
+}
+
+.info-txt-box-datas{
+    width: 60vw;
+    margin: 0;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box-casamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ----DIZIMO----- */
+
+.header-dizimo{
+    background-image: url(/images/dizimo/fundo-dizimio.png);
+}
+
+.main-txt-dizimo{
+    font-family: 'Bookman Old Style', sans-serif;
+    font-weight: 600;
+    font-size: 65px;
+    width: 50vw;
+}
+
+#dizimo-txt-box{
+    padding: 5%;
+    width: 55vw;   
+}
+
+#dizimo-img{
+    width: 25vw;
+    height: 40vh;
+}
+
+.general-container-content-dizimo{
+    padding-top: 0;
+    padding-bottom: 15%;
+}
+
+.icon-bradesco{
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 10%;
+}
+
+.icon-pix{
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 10%;
+}
+
+.qr-code{
+    width: 15vw;
+    height: 30vh;
+}
+
+.dizimo-txt{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #000000;
+}
+
+.dizimo-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dizimo-form-item{
+    display: flex;
+    flex-direction: column;
+    margin:5% 15% 0 0;
+}
+
+.form-dizimo-link{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 15px;
+    background-color: #742134;
+    padding: 2%;
+    text-align: center;
+    width: 35vw;
+    margin: 3% 0;
+    border-radius: 13px;
+}
+
+.form-dizimo-link:hover{
+    color: #FFFFFF;
+    background-color: #945463;
+    transition: 0.2s;
+}
+
+.img-cruz{
+    width: 35vw;
+    height: 50vh;
+}
+
+/* ----APOSTOLADO---- */
+
+.header-apostolado{
+    background-image: url(/images/apostolado/fundo-apostolado.png);
+}
+
+.main-txt-apostolado{
+    font-family: 'Bookman Old Style', sans-serif;
+    font-weight: 600;
+    font-size: 65px;
+    width: 60vw;
+}
+
+/* ----EVENTOS---- */
+
+.bg-eventos{
+    background: linear-gradient(0deg, #742134 0%, rgba(116, 33, 52, 0) 239.35%);
+    padding:0 5%;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    z-index: 1;
+    padding:0 5%;
+    transition: 0.3s;
+}
+
+.icon-navbar-eventos{
+    height: 6vh;
+    width: 4vw;
+}
+
+.logo-nav-eventos{
+    height: 10vh;
+    width: 6vw;
+}
+
+#eventos-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.eventos-img{
+    width: 50vw;
+    height: 80vh;
+    margin: 5% 0;
+}
+
+/* ----PADROEIRA---- */
+
+.header-padroeira{
+    background-image: url(/images/tela-padroeira/fundo-padroeira.png);
+}
+
+#padroeira-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5% 4% 0 4%;
+}
+
+.general-container-content-santa{
+    padding-top: 0;
+}
+
+.main-txt-padroeira{
+    font-family: 'Bookman Old Style', sans-serif;
+    font-weight: 600;
+    font-size: 65px;
+    width: 60vw;
+}
+
+#santa-rita-img{
+    width: 40vw;
+    height: 40vh;
+}
+
+.info-txt-box-padroeira{
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.info-txt-padroeira{
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.padroeira-txt-box{
+    margin: 0 4%;
+}
+
+.padroeira-txt-content{
+    margin-bottom: 3%;
+}
+
+.padroeira-txt-item{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    text-align: justify;
+    font-size: 15px;
+}
+
+#logo-santa-rita{
+    width: 30vw;
+    height: 40vh;
+}
+
+#padroeira-content-santa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5% 0 0 0;
+}
+
+.info-txt-padroeira-oracao{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    margin-right: 5%;
+}
+
+#santa-rita-desenho{
+    width: 40vw;
+    height: 60vh;
+}
+
+/* -----HORARIOS----- */
+
+#horarios-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h4-matriz{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #742134;
+}
+
+.santa-rita-img{
+    width: 35vw;
+    height: 60vh;
+}
+
+.box-img-horario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5%;
+}
+
+.img-horario{
+    width: 25vw;
+    height: 40vh;
+}
+
+.toggler-horario{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, #4d4244 0%, rgba(116, 33, 52, 0) 239.35%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.horario-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 60vh;
+    padding: 5%;
+    background-color:#FFFFFF;
+    border-radius: 15%;
+    
+}
+
+.close-horario{
+    display: flex;
+    align-self: end;
+    font-size: 20px;
+    position: absolute;
+    bottom: 75%;
+    color: #742134;
+}
+
+.horario-img{
+    width: 7vw;
+    height: 10vh;
+}
+
+.horario-img-2{
+    margin-top: 25%;
+}
+
+.horario-title{
+    font-family: 'Bookman Old Style', sans-serif;
+    font-weight: 600;
+    color: #742134;
+    font-size: 25px;
+    text-align: center;
+}
+
+.horario-txt-box-2{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.horario-txt{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    margin-bottom: 4%;
 }
