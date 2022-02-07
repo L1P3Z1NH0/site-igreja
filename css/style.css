@@ -8,38 +8,55 @@
 }
 
 .header{
-    width: 100%;
-    height: 100vh;
+    max-width: 100%;
+    min-height: 100vh;
     background-image: url(../images/fundo-tela-inicial/Frame-1-1.png);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
 }
 
 #mainNav{
     transition: background 0.4s;
     width: 100%;
-    height: 15vh;
+    min-height: 15vh;
     display: flex;
     justify-content: space-between;
     position: fixed;
     align-items: center;
     z-index: 1;
-    padding: 5%;
+    padding: 0 3rem;
     transition: 0.3s;
+}
+
+.background-nav{
+    background: linear-gradient(0deg, #742134 0%, rgba(116, 33, 52, 0) 239.35%);
 }
 
 button{
     all: unset;
 }
 
+.button-icon{
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
 .icon-navbar{
-    width: 5vw;
-    height: auto;
+    width: 6rem;
     transition: 0.3s;
+    height: auto;
+}
+
+.a-logo{
+    width: min(12rem, 80%);
+    display: flex;
+    justify-content: center;
 }
 
 .logo-nav{
-    height: 15vh;
+    height: auto;
     width: 100%;
 }
 
@@ -54,7 +71,7 @@ button{
 }
 
 .offcanvas{
-    width: 25vw;
+    max-width: 25vw;
 }
 
 li{
@@ -90,9 +107,9 @@ a:hover{
     display: flex;
     width: 15vw;
     padding-top: 5%;
-    /* border-top: 1px solid #C4C4C4BF;
-    border-top-left-radius: 5px; */
-    margin-left: 2%;
+    border-top: 1px solid #C4C4C4BF;
+    border-top-left-radius: 5px;
+    margin-left: 5%;
 }
 
 .dropdown-toggle{
@@ -104,7 +121,7 @@ a:hover{
 
 .dropdown-menu{
     border: none;
-    width: 100%;
+    max-width: 31.25rem;
     height: 40vh;
     display: flex;
 }
@@ -126,28 +143,27 @@ a:hover{
 }
 
 .intro-txt{
-    width: 50vw;
-    height: 13vh;
+    width:50vw;
     margin: 5%;
     position: absolute;
-    bottom: 50%;
+    bottom: 40%;
+}
+
+#main-txt{
+    width: min(600px, 100%);
 }
 
 #main-txt-content{
     font-family: 'Bookman Old Style', sans-serif;
     font-weight: 600;
-}
-
-#sub-txt{
-    width: 30vw;
-    height: 9vh;
-    margin: 3% 0;
+    font-size: clamp(1rem, 1.5rem + 4vw, 4rem);   
 }
 
 #sub-txt-content{
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 1.65rem;
+    font-size: clamp(1rem, 1.1rem + 1vw, 2rem);
+    margin-top: 5%;
 }
 
 .general-container-content{
@@ -161,8 +177,9 @@ a:hover{
     font-family: 'Bookman Old Style', sans-serif;
     font-weight: 600;
     color: #742134;
-    font-size: 45px;
+    font-size: clamp(1rem, 2rem + 4vw, 5rem);
     margin: 0;
+    padding: 1rem;
 }
 
 .reze-box{
@@ -180,8 +197,7 @@ a:hover{
 }
 
 .icon-reze{
-    width: 8vw;
-    height: 15vh;
+    width: min(12rem, 80%);
 }
 
 .reze-txt{
@@ -190,12 +206,13 @@ a:hover{
     color: #404040;
     font-size: 20px;
     text-align: center;
+    margin-top:2%;
 }
 
 .acesse{
     font-family: 'Lato', sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: clamp(1rem, 1rem + 2vw, 1.5rem);
     color: #742134;
     text-align: center;
 }
@@ -212,8 +229,7 @@ a:hover{
 }
 
 #paroquia-img{
-    width: 60vw;
-    height: 55vh;
+    width: 100%;
 }
 
 #paroquia-txt-box{
@@ -225,7 +241,8 @@ a:hover{
     font-weight: 400;
     color: #000000;
     text-align: justify;
-    font-size: 15px;
+    font-size: clamp(1rem, 1rem + 2vw, 1.75rem);
+    padding: 1rem;
 }
 
 #address-content{
@@ -235,8 +252,11 @@ a:hover{
 
 #address{
     margin: 5%;
+}
+
+.address-item{
+    width: 30vw;
     height: 50vh;
-    width: 50vw;
 }
 
 #address-txt-box{
@@ -245,7 +265,7 @@ a:hover{
 
 .footer{
     width: 100%;
-    height: 60vh;
+    /* height: 60vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,28 +278,29 @@ a:hover{
 .footer-child{
     width: 50%;
     height: 60vh;
-    padding: 5%;
+    /* padding: 5%; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 10%;
 }
 
 .footer-info{
-    margin-right: 20%;
+    margin-right: 15%;
+    margin-left: 5%;
 }
 
 .footer-item{
     display: flex;
     align-items: center;
-    margin: 4% 0;
+    margin: 6% 0;
     width: 100%;
-    height: 10vh;
 }
 
 .footer-icon{
     width: 4vw;
-    height: 7vh;
+    /* height: 7vh; */
 }
 
 .footer-txt{
@@ -291,7 +312,6 @@ a:hover{
 
 .footer-nm{
     display: flex;
-
 }
 
 .vertical-line {
@@ -319,8 +339,8 @@ a:hover{
 }
 
 .footer-logo-paroquia{
-    width: 25vh;
-    height: 35vh;
+    width: 20vw;
+    /* min-height: 20vh; */
 }
 
 .footer-paroquia-txt{
@@ -377,26 +397,20 @@ a:hover{
 .main-txt-paroquia{
     font-family: 'Bookman Old Style', sans-serif;
     font-weight: 600;
-    font-size: 65px;
+    font-size: clamp(1rem, 2rem + 4vw, 4rem);
 }
 
 .sub-txt-paroquia{
     width: 40vw;
-    height: 9vh;
     margin: 3% 0;
 }
 
 .sub-txt-paroquia-content{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 2.75rem;
+    font-size: clamp(1rem, 1.5rem + 2vw, 2.25rem);
     letter-spacing: 2.5px;
     width: 100%;
-}
-
-#paroquia-img{
-    width: 100%;
-    height: 65vh;
 }
 
 #paroquia-content{
@@ -434,7 +448,6 @@ a:hover{
 
 .batismo-img{
     width: 100%;
-    height: 20vh;
 }
 
 .general-container-batismo{
@@ -451,7 +464,7 @@ a:hover{
     width: 90%;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: clamp(1rem, 1rem + 2vw, 1.75rem);
 }
 
 .info-txt-box{
@@ -461,6 +474,7 @@ a:hover{
 .info-h{
     font-family: 'Lato', sans-serif;
     font-weight: 700;
+    font-size: clamp(1rem, 1.5rem + 2vw, 2.25rem);
 }
 
 .form-box{
@@ -472,6 +486,7 @@ a:hover{
     font-weight: 400;
     width: 50vw;
     margin-top: 5%;
+    font-size: clamp(1rem, 1rem + 2vw, 1.75rem);
 }
 
 .batismo-form{
@@ -504,13 +519,11 @@ a:hover{
 }
 
 .img-batismo-form{
-    height: 40vh;
     width: 25vw;
 }
 
 .sub-txt-batismo{
     width: 50vw;
-    height: 9vh;
     margin: 3% 0;
 }
 
@@ -523,25 +536,23 @@ a:hover{
 .main-txt-catequese-crisma{
     font-family: 'Bookman Old Style', sans-serif;
     font-weight: 600;
-    font-size: 60px;
-    width: 60vw;
+    font-size: clamp(1rem, 2rem + 4vw, 4rem);   
+    width: 30vw;
     margin-bottom: 0;
 }
 
 .sub-txt-catequese{
     width: 40vw;
-    height: 9vh;
     margin:0;
 }
 
 .sub-txt-catequese-content{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 28px;
+    font-size: clamp(1rem, 1.5rem + 2vw, 2.25rem);
 }
 
 #catequese-img{
-    height: 40vh;
     width: 25vw;
 }
 
@@ -562,12 +573,11 @@ a:hover{
 .sub-txt-coroinhas-content{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 26px;
+    font-size: clamp(1rem, 1.5rem + 2vw, 2.25rem);
 }
 
 #coroinha-img{
     width: 100%;
-    height: 60vh;
 }
 
 /* ---- ENCONTRO DE JOVENS ---- */
@@ -579,13 +589,12 @@ a:hover{
 .main-txt-jovens{
     font-family: 'Bookman Old Style', sans-serif;
     font-weight: 600;
-    font-size: 65px;
-    width: 60vw;
+    font-size: clamp(1rem, 2rem + 4vw, 4rem);   
+    width: 30vw;
 }
 
 #jovens-img{
     width: 25vw;
-    height: 45vh;
 }
 
 .info-txt-box-jovens{
@@ -603,7 +612,6 @@ a:hover{
 
 #casais-img{
     width: 30vw;
-    height: 45vh;
 }
 
 /* ---- CURSO DE NOIVOS---- */
@@ -629,7 +637,7 @@ a:hover{
 .info-txt-box-casamento{
     width: 60vw;
     margin: 0;
-    /* margin-right: 5%; */
+    margin-right: 5%;
     display: flex;
     flex-direction: column;
 }
@@ -673,13 +681,12 @@ a:hover{
 
 #datas-content{
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     margin-top: 2%;
 }
 
 #calendario-img{
     width: 18vw;
-    height: 30vh;
 }
 
 .info-txt-box-datas{
@@ -705,8 +712,8 @@ a:hover{
 .main-txt-dizimo{
     font-family: 'Bookman Old Style', sans-serif;
     font-weight: 600;
-    font-size: 65px;
-    width: 50vw;
+    font-size: clamp(1rem, 2rem + 4vw, 4rem);   
+    width: 30vw;
 }
 
 #dizimo-txt-box{
@@ -716,7 +723,6 @@ a:hover{
 
 #dizimo-img{
     width: 25vw;
-    height: 40vh;
 }
 
 .general-container-content-dizimo{
@@ -726,19 +732,16 @@ a:hover{
 
 .icon-bradesco{
     width: 100%;
-    height: 15vh;
     margin-bottom: 10%;
 }
 
 .icon-pix{
     width: 100%;
-    height: 15vh;
     margin-bottom: 10%;
 }
 
 .qr-code{
     width: 15vw;
-    height: 30vh;
 }
 
 .dizimo-txt{
@@ -780,7 +783,6 @@ a:hover{
 
 .img-cruz{
     width: 35vw;
-    height: 50vh;
 }
 
 /* ----APOSTOLADO---- */
@@ -792,8 +794,8 @@ a:hover{
 .main-txt-apostolado{
     font-family: 'Bookman Old Style', sans-serif;
     font-weight: 600;
-    font-size: 65px;
-    width: 60vw;
+    font-size: clamp(1rem, 2rem + 4vw, 4rem);   
+    width: 30vw;
 }
 
 /* ----EVENTOS---- */
@@ -810,7 +812,6 @@ a:hover{
     position: fixed;
     align-items: center;
     z-index: 1;
-    padding:0 5%;
     transition: 0.3s;
 }
 
@@ -832,8 +833,7 @@ a:hover{
 }
 
 .eventos-img{
-    width: 50vw;
-    height: 80vh;
+    width: 40vw;
     margin: 5% 0;
 }
 
@@ -857,13 +857,12 @@ a:hover{
 .main-txt-padroeira{
     font-family: 'Bookman Old Style', sans-serif;
     font-weight: 600;
-    font-size: 65px;
-    width: 60vw;
+    font-size: clamp(1rem, 2rem + 4vw, 4rem);   
+    width: 30vw;
 }
 
-#santa-rita-img{
+#santa-rita-img-padroeira{
     width: 40vw;
-    height: 40vh;
 }
 
 .info-txt-box-padroeira{
@@ -877,7 +876,7 @@ a:hover{
     width: 100%;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: clamp(1rem, 1rem + 2vw, 1.75rem);
 }
 
 .padroeira-txt-box{
@@ -898,7 +897,6 @@ a:hover{
 
 #logo-santa-rita{
     width: 30vw;
-    height: 40vh;
 }
 
 #padroeira-content-santa{
@@ -911,13 +909,12 @@ a:hover{
 .info-txt-padroeira-oracao{
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: clamp(1rem, 1rem + 2vw, 1.75rem);
     margin-right: 5%;
 }
 
 #santa-rita-desenho{
     width: 40vw;
-    height: 60vh;
 }
 
 /* -----HORARIOS----- */
@@ -938,7 +935,6 @@ a:hover{
 
 .santa-rita-img{
     width: 35vw;
-    height: 60vh;
 }
 
 .box-img-horario{
@@ -950,7 +946,6 @@ a:hover{
 
 .img-horario{
     width: 25vw;
-    height: 40vh;
 }
 
 .toggler-horario{
@@ -989,7 +984,6 @@ a:hover{
 
 .horario-img{
     width: 7vw;
-    height: 10vh;
 }
 
 .horario-img-2{
@@ -1016,4 +1010,338 @@ a:hover{
     color: #000000;
     font-size: 14px;
     margin-bottom: 4%;
+}
+
+@media (max-width:480px)  {
+
+    .offcanvas{
+        max-width: 55vw;
+    }
+
+    .ul-offcanvas{
+        padding: 0;
+    }
+
+    .list-menu{
+        width: 50vw;
+    }
+
+    .list-outline{
+        width: 45vw;
+        padding: 5%;
+    }
+
+    .list-outline-dropdown{
+        width: 50vw;
+    }
+
+    .intro-txt{
+        width:80vw;
+    }
+
+    .reze-item{
+       margin:5%;     
+    }
+
+    #paroquia-content{
+        flex-wrap: wrap;
+    }
+
+    #address-content{
+        margin-top: 10%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .address-item{
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+    }
+
+    .footer-info{
+        margin: 0 5%;
+        width: 70vw;
+    }
+    
+    .footer-icon{
+        width: 10vw;
+        /* height: 7vh; */
+    }
+
+    .vertical-line{
+        display: none;
+    }
+
+    .footer-logo-paroquia{
+        display: none;
+    }
+
+    .footer-child{
+        width: 70vw;
+        height: 80vh;
+    }
+
+    .logo-nm{
+        bottom: 40%;
+        left: 40%;
+        width: 25vw;        
+    }
+
+    /* -----PAROQUIA---- */
+
+    .intro-paroquia {
+        bottom: 60%;
+        left: 10%;       
+    }
+
+    #batismo-img{
+        width: 40vw;
+    }
+
+    .info-txt-box {
+        margin-left: 0;
+    }
+    
+    .form-txt{
+        width: 80vw;
+        text-align: center;
+        margin-right:0;
+        margin:5%;
+    }
+
+    .batismo-form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .batismo-form-item {
+        margin:0;
+    }
+
+    .form-batismo-link {
+        width: 75vw;  
+    }
+
+    .img-batismo-form {
+        width: 40vw;
+    }
+
+    /* -----CATEQUESE----- */
+
+    #main-txt {
+        width: 60vw
+    }    
+
+    .main-txt-catequese-crisma {
+        width: 60vw;
+        margin-bottom: 5%;
+    }
+
+    .pastorais-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #catequese-img{
+        width: 35vw;
+    }
+
+    .info-h{
+        text-align: center;
+    }
+
+    .info-txt-batismo {
+        width: 75vw;
+    }
+
+    /* ----COROINHA---- */
+
+    #coroinha-img{
+        width: 40vw;
+    }
+
+    /* ----JOVENS---- */
+
+    .main-txt-jovens {
+        width: 60vw;
+    }
+
+    #jovens-img{
+        width: 40vw;
+    }
+
+    /* -----CURSO DE NOIVOS---- */
+
+    .sub-txt-catequese {
+        width: 60vw;
+    }
+
+    #casamento-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #alianca-img{
+        width: 50vw;
+    }
+
+    .info-txt-box-casamento {
+        width: 80vw;
+        margin: 0;
+    }
+
+    #datas-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ul-datas{
+        padding: 1rem;
+    }
+
+    .info-txt-box-datas {
+        width: 80vw;
+        margin: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #calendario-img {
+        width: 25vw;
+    }
+
+    /* -----ENCONTRO DE CASAIS---- */
+    #casais-img{
+        width: 40vw;
+    }
+
+    /* -----HORARIOS---- */
+
+    .sub-title-horario{
+        margin-top: 25%;
+    }
+
+    .santa-rita-img {
+        width: 65vw;
+    }
+
+    /* -----EVENTOS----- */
+
+    .eventos-img {
+        width: 90vw;
+    }   
+
+    /* -----DIZIMO---- */
+
+    .main-txt-dizimo {
+        width: 60vw;
+    }
+
+    .sub-txt-paroquia {
+        width: 70vw;
+    }
+
+    #dizimo-txt-box {
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #dizimo-img{
+        width: 35vw;
+    }
+
+    .icon-bradesco{
+        width: 30vw;
+    }
+    
+    .icon-pix{
+        width: 30vw;  
+    }
+
+    .qr-code {
+        width: 45vw;
+    }
+
+    .img-cruz{
+        width: 40vw;
+    }
+
+
+    /* ----APOSTOLADO---- */
+
+    .main-txt-apostolado {
+        width: 80vw;
+    }
+
+    #main-txt-title{
+        width: 80vw;
+    }
+
+    /* -----PADROEIRA---- */
+
+    #padroeira-content {
+        flex-direction: column;
+    }
+
+
+    .main-txt-padroeira {
+        width: 60vw;
+    }
+
+    .padroeira-txt-box {
+        margin: 0;
+        padding: 0 6%;
+    }
+
+    .padroeira-txt-item{
+        width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 1rem + 2vw, 1.75rem);
+
+    color: #000000;
+    text-align: justify;
+    padding: 1rem;
+    }
+
+    #padroeira-content-santa {
+        flex-direction: column;
+    }
+    
+    #logo-santa-rita{
+        width: 45vw;
+    }
+
+    #santa-rita-desenho{
+        width: 45vw;
+    }
+
+    /* ----HORARIOS---- */
+
+    .box-img-horario {
+        flex-wrap: wrap;
+    }
+
+    .img-horario{
+        width: 45vw;
+        margin: 5% 0;
+    }    
+
+    .horario-box {
+        width: 80vw;
+        height: auto; 
+    }
+
+    .horario-img {
+        width: 25vw;
+    }
+
 }

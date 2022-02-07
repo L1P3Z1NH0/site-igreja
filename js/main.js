@@ -4,25 +4,23 @@ window.addEventListener('scroll', function(){
     const logoNav = document.querySelector('.logo-nav')
     const mainNav = document.getElementById ('mainNav');
 
-    if(window.pageYOffset > 0){
-        logoImage.style.height = "6vh";
-        logoImage.style.width = "4vw";
-        logoNav.style.height = "10vh";
-        logoNav.style.width = "6vw";
-        iconAgostiniano.style.height = "7vh";
-        iconAgostiniano.style.width = "4vw";
-        mainNav.style.padding = "0 5%"
-        mainNav.style.height = "10vh"
-        mainNav.classList.add('bg-transition');
-    }else{
-        logoImage.style.height = "8vh";
-        logoImage.style.width = "5vw";
-        logoNav.style.height = "15vh";
-        logoNav.style.width = "10vw";
-        iconAgostiniano.style.height = "8vh";
-        iconAgostiniano.style.width = "5vw";
-        mainNav.style.padding = "5%"
-        mainNav.style.height = "15vh"
-        mainNav.classList.remove('bg-transition')
-    }
+        if(window.pageYOffset > 0){
+            logoImage.style.padding = "0.75rem 0";
+            logoImage.style.width = "4rem";
+            logoNav.style.width = "min(8rem, 80%)";
+            iconAgostiniano.style.padding = "0.75rem 0";
+            iconAgostiniano.style.width = "4rem";
+            mainNav.style.padding = "0 3rem"
+            mainNav.style.minHeight = "10vh"
+            mainNav.classList.add('bg-transition');
+        }else{
+            logoImage.style.padding = "0";
+            logoImage.style.width = "6rem";         
+            logoNav.style.width = "min(12rem, 80%)";         
+            iconAgostiniano.style.padding = "0";
+            iconAgostiniano.style.width = "6rem";
+            mainNav.style.padding = "0 3rem"
+            mainNav.style.minHeight = "15vh"
+            mainNav.classList.remove('bg-transition')
+        } 
 })

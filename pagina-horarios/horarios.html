@@ -28,25 +28,24 @@
 <body>
     <div class="general-container">
         <div>
-            <nav class="bg-eventos">
-
-                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+            <nav id="mainNav" class="background-nav">
+                <button class="button-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
                     aria-controls="offcanvasWithBackdrop">
 
-                    <img class="icon-navbar icon-navbar-eventos" src="/images/icones-nav-bar/icon-menu.png" alt=""
-                        width="70" height="70">
+                    <img class="icon-navbar" src="/images/icones-nav-bar/icon-menu.png" alt="" width="70" height="70">
 
                 </button>
 
-                <a class="" href="/pagina-inicial/index.html">
-                    <img class="icon-navbar logo-nav logo-nav-eventos" src="/images/icones-nav-bar/logo-nav.png" alt=""
-                        width="70" height="70">
+                <a class="a-logo" href="/pagina-inicial/index.html">
+                    <img class="icon-navbar logo-nav" src="/images/icones-nav-bar/logo-nav.png" alt="" width="70"
+                        height="70">
                 </a>
 
-                <a class="" href="https://www.osabrasil.org/" target="_blank">
+                <a class="button-icon" href="https://www.osabrasil.org/" target="_blank">
                     <img class="icon-navbar icon-agostiniano" src="/images/icones-nav-bar/icon-agostinianos-1.png"
                         alt="" width="70" height="70">
                 </a>
+
             </nav>
 
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
@@ -57,7 +56,7 @@
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul>
+                    <ul class="ul-offcanvas">
                         <a class="link-menu" href="/pagina-paroquia/paroquia.html">
                             <li class="">
                                 A Paróquia
@@ -75,23 +74,15 @@
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <li><a class="dropdown-item link-menu" href="/pagina-batismo/batismo.html">Batismo</a></li>
                             <li class="list-outline-dropdown"></li>
-                            <li><a class="dropdown-item link-menu"
-                                    href="/pagina-catequese-crisma/catequese-crisma.html">Catequese/Crisma</a></li>
+                            <li><a class="dropdown-item link-menu" href="/pagina-catequese-crisma/catequese-crisma.html">Catequese/Crisma</a></li>
                             <li class="list-outline-dropdown"></li>
-                            <li><a class="dropdown-item link-menu"
-                                    href="/pagina-coroinhas-cerimoniario/coroinhas-cerimoniarios.html">Coroinhas/Cerimoniários</a>
-                            </li>
+                            <li><a class="dropdown-item link-menu" href="/pagina-coroinhas-cerimoniario/coroinhas-cerimoniarios.html">Coroinhas/Cerimoniários</a></li>
                             <li class="list-outline-dropdown"></li>
-                            <li><a class="dropdown-item link-menu"
-                                    href="/pagina-encontro-de-jovens/encontro-de-jovens.html">Encontro de Jovens</a>
-                            </li>
+                            <li><a class="dropdown-item link-menu" href="/pagina-encontro-de-jovens/encontro-de-jovens.html">Encontro de Jovens</a></li>
                             <li class="list-outline-dropdown"></li>
-                            <li><a class="dropdown-item link-menu" href="/pagina-curso-noivos/curso-noivos.html">Curso
-                                    de Noivos</a></li>
+                            <li><a class="dropdown-item link-menu" href="/pagina-curso-noivos/curso-noivos.html">Curso de Noivos</a></li>
                             <li class="list-outline-dropdown"></li>
-                            <li><a class="dropdown-item link-menu"
-                                    href="/pagina-encontro-de-casais/encontro-de-casais.html">Encontro de Casais</a>
-                            </li>
+                            <li><a class="dropdown-item link-menu" href="/pagina-encontro-de-casais/encontro-de-casais.html">Encontro de Casais</a></li>
                             <li class="list-outline-dropdown"></li>
                         </ul>
                         <li class="list-outline"></li>
@@ -129,7 +120,6 @@
                     </ul>
                 </div>
             </div>
-        </div>
 
         <div id="horario-santa-rita" class="toggler-horario"  style="display: none;">
             <div class="horario-box">
@@ -323,7 +313,7 @@
         </div>
 
         <div class="general-container-content">
-            <h2 class="sub-title">
+            <h2 class="sub-title sub-title-horario" >
                 HORÁRIOS DE MISSAS
             </h2>
 
@@ -334,44 +324,47 @@
                     <img class="santa-rita-img" src="/images/horarios/santa-rita.png" alt="">
                 </button>
 
-                <div class="container">
-                    <div class="row row-cols-3 box-img-horario">
-                        <div class="col">
+                <div class="horarios-img-content">
+                    <div class="box-img-horario">
+                        <div class="horario-img-item">
                             <button onclick="hideShowDiv('horario-sao-vicente')" href="">
                                 <img class="img-horario" src="/images/horarios/sao-vicente.png" alt="">
                             </button>
                         </div>
 
-                        <div class="col">
+                        <div class="horario-img-item">
                             <button onclick="hideShowDiv('horario-sao-nicolau')" href="">
                                 <img class="img-horario" src="/images/horarios/tolentino.png" alt="">
                             </button>
                         </div>
 
-                        <div class="col">
+                        <div class="horario-img-item">
                             <button onclick="hideShowDiv('horario-sao-jose')" href="">
                                 <img class="img-horario" src="/images/horarios/sao-jose.png" alt="">
                             </button>
                         </div>
+                    </div>
 
-                        <div class="col">
+                    <div class="box-img-horario">                 
+                        <div class="horario-img-item">
                             <button onclick="hideShowDiv('horario-fatima')" href="">
                                 <img class="img-horario" src="/images/horarios/fatima.png" alt="">
                             </button>
                         </div>
 
-                        <div class="col">
+                        <div class="horario-img-item">
                             <button onclick="hideShowDiv('horario-aparecida')" href="">
                                 <img class="img-horario" src="/images/horarios/aparecida.png" alt="">
                             </button>
                         </div>
 
-                        <div class="col">
+                        <div class="horario-img-item">
                             <button onclick="hideShowDiv('horario-conselho')" href="">
                                 <img class="img-horario" src="/images/horarios/conselho.png" alt="">
                             </button>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -431,7 +424,7 @@
         </div>
 
     </div>
-    <script src="/js/toggle-div.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
