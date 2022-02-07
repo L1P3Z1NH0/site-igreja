@@ -80,6 +80,7 @@ li{
 
 a{
     text-decoration: none;
+    outline: none;
 }
 
 element.style{
@@ -89,6 +90,14 @@ element.style{
 a:hover{
     text-decoration: none;
     color: #000000;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.form-batismo-link:visited{
+    color: #FFFFFF;
 }
 
 .list-menu{
@@ -781,6 +790,10 @@ a:hover{
     transition: 0.2s;
 }
 
+.form-dizimo-link:visited{
+    color: #FFFFFF;
+}
+
 .img-cruz{
     width: 35vw;
 }
@@ -967,7 +980,7 @@ a:hover{
     justify-content: center;
     width: 40vw;
     height: 60vh;
-    padding: 5%;
+    padding: 2.5%;
     background-color:#FFFFFF;
     border-radius: 15%;
     
@@ -977,9 +990,9 @@ a:hover{
     display: flex;
     align-self: end;
     font-size: 20px;
-    position: absolute;
-    bottom: 75%;
     color: #742134;
+    margin-right: 5%;
+    margin-top: 2%;
 }
 
 .horario-img{
@@ -1336,8 +1349,8 @@ a:hover{
     }    
 
     .horario-box {
-        width: 80vw;
-        height: auto; 
+        width: 90vw;
+        height: auto;
     }
 
     .horario-img {
